@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(16, 19, 65);
+    background-image: url("img/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    
+}
+
+.intro-1, .intro-2 {
+    position: inherit;
+    float:center;
+    margin: auto;
+    padding: auto;
+    font-size: x-large;
+    backdrop-filter: blur("4rem");
+}
+  
+
+.main-2{
+    position:relative;
+    padding: 1rem;;
+    border: line;
+    border-radius: 1rem;
+    width:fit-content;
+    background-color:transparent;
+    height: max-content;
+    color:aliceblue;
+    backdrop-filter: blur("4rem");
+    -webkit-backdrop-filter: blur("4rem");
+    animation: mymove 3s ease-in-out;
+}
+
+input, a {
+    backdrop-filter:blur(10rem);
+    padding: 0.5rem;
+    padding-left: 5rem;
+    width: auto;
+    background-color: transparent;
+    border:line;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: x-large;
+    float: right;
+    color:aliceblue;
+    &:hover{
+        background-color: antiquewhite;
+        color: brown;
+    }
+}
+
+label{
+    padding: 0.5rem;
+    padding-left: 5rem;
+    width: auto;
+    background-color: transparent;
+    border:line;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: x-large;
+    float: left;
+}
+button{
+    background-color: transparent;
+    padding: auto;
+    width: 7rem;
+    height:3.5rem;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.5rem;
+    backdrop-filter:blur(10rem);
+    color: aliceblue;
+    &:hover{
+        background-color: antiquewhite;
+        color: brown;
+    }
+}
+h2{
+    font-size: 3rem;
+    animation: mymessage 3s ease-in;
+}
+
+@keyframes mymove {
+    from {right:1000rem;}
+    to {right: 0rem;}
+}
+
+@keyframes mymessage {
+    from {color: transparent;}
+    to {color: aliceblue;}
+    
+}
